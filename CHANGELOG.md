@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Firefox support (Firefox 140+): the manifest now includes `background.scripts` and `browser_specific_settings.gecko`. Chrome continues to use the service worker.
+- Firefox installation instructions in the README.
+
 ## 1.2.0 - 2026-08-27
 
 ### Changed

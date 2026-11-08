@@ -19,7 +19,17 @@
   ],
   "host_permissions": ["https://sis.iutoic-dhaka.edu/*"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
   },
-  "permissions": ["storage", "activeTab"]
+  "permissions": ["storage", "activeTab"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "iut-course-evaluation-helper@notavailable73.github.io",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 }

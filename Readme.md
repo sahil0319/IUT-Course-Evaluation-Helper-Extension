@@ -1,6 +1,6 @@
 # IUT Course Evaluation Helper Extension
 
-IUT Course Evaluation Helper is a Chromium browser extension for quickly filling IUT SIS course evaluation forms.
+IUT Course Evaluation Helper is a browser extension (Chromium browsers and Firefox) for quickly filling IUT SIS course evaluation forms.
 
 It works only on:
 
@@ -19,7 +19,24 @@ It works only on:
 
 ## Installation
 
-This extension works in Chrome, Microsoft Edge, and other Chromium-based browsers.
+### Firefox
+
+Requires Firefox 140 or newer.
+
+1. Download the extension source code from GitHub and extract it.
+2. Open `about:debugging#/runtime/this-firefox`.
+3. Click **Load Temporary Add-on...** and select the `manifest.json` file in the extracted folder.
+4. Pin the extension from the toolbar's puzzle-piece (Extensions) menu.
+
+Temporary add-ons are removed when Firefox restarts, so repeat these steps after a restart. To keep it installed permanently, the add-on must be signed by Mozilla (see below).
+
+To build a package for signing or submission to [addons.mozilla.org](https://addons.mozilla.org/developers/):
+
+```sh
+npx web-ext build
+```
+
+### Chrome, Edge, and other Chromium browsers
 
 1. Download the extension source code from GitHub.
 2. Extract the downloaded archive.
